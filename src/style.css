@@ -1,4 +1,30 @@
 h1 {
   color: #24527a;
   text-align: center;
+  padding: 20px;
+  margin-bottom: 20;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #24527a;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  color: rgb(135, 135, 135);
+  margin: 0;
+  padding: 0;
 }
