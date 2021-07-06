@@ -23,13 +23,15 @@ let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity"); 
 let windElement = document.querySelector("#wind"); 
 let dateElement = document.querySelector("#date"); 
+let iconElement = document.querySelector("#icon"); 
 temperatureElement.innerHTML = Math.round(response.data.main.temp); 
 cityElement.innerHTML = response.data.name; 
 descriptionElement.innerHTML = response.data.weather[0].description;
 humidityElement.innerHTML = response.data.main.humidity; 
 windElement.innerHTML = Math.round(response.data.wind.speed); 
 dateElement.innerHTML = formatDate(response.data.dt*1000);
-}
+iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+}; 
 let apiKey = "d0f75ef944c3443ad82f1c3cdedd03ad"; 
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
 
