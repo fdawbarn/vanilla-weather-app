@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
 h1 {
   color: #24527a;
   text-align: center;
@@ -19,10 +23,20 @@ li {
   color: rgb(135, 135, 135);
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
-li :first-letter {
+li:first-letter {
   text-transform: capitalize;
+}
+
+small {
+  color: #24527a;
+}
+
+.float-left {
+  font-size: 30px;
+  color: #24527a;
 }
 
 .weather-app-wrapper {
@@ -36,10 +50,29 @@ li :first-letter {
   padding: 20px;
   border: 1px solid lightblue;
   border-radius: 5px;
+  background: radial-gradient(
+    1224px at 10.6% 8.8%,
+    rgb(255, 255, 255) 0%,
+    rgb(153, 202, 251) 100.2%
+  );
 }
 
 .units {
   position: relative;
-  font-size: 10px;
-  top: -4px;
+  font-size: 12px;
+  top: -14px;
+}
+
+.celsius-link {
+  text-decoration: none;
+}
+
+.fahrenheit-link {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
 }
