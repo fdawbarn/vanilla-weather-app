@@ -85,6 +85,20 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 axios.get(apiUrl).then(displayTemperature);
 }
 
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "d0f75ef944c3443ad82f1c3cdedd03ad";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+let locationButton = document.querySelector("#current-location");
+locationButton.addEventListener("click", getCurrentLocation);
+
 
 
 function handleSubmit(event) {

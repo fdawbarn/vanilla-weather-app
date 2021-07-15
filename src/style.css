@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background: white;
 }
 
 h1 {
@@ -40,20 +40,20 @@ small {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
 }
 
 .weather-app {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid lightblue;
   border-radius: 5px;
-  background: radial-gradient(
-    1224px at 10.6% 8.8%,
-    rgb(255, 255, 255) 0%,
-    rgb(153, 202, 251) 100.2%
+  background: linear-gradient(
+    111.5deg,
+    rgb(228, 247, 255) 21.9%,
+    rgb(255, 216, 194) 92.2%
   );
 }
 
@@ -64,10 +64,6 @@ small {
 }
 
 .celsius-link {
-  text-decoration: none;
-}
-
-.fahrenheit-link {
   text-decoration: none;
 }
 
